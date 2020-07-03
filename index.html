@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Store Locator</title>
+		<link rel="stylesheet" href="style/style.css" />
+		<script src="https://kit.fontawesome.com/54b69e7728.js" crossorigin="anonymous"></script>
+		<script src="js/store-data.js"></script>
+	</head>
+	<body>
+		<div class="title">Store Locator</div>
+		<div class="search-container">
+			<div class="search-box">
+				<input type="text" name="search" class="search-input" id="search-input" placeholder="Enter Zip Code" autocomplete="off"/>
+				<i id="search-icon" class="fas fa-search" onclick="searchStores()"></i>
+			</div>
+		</div>
+		<dir class="stores-list-box">
+			<div class="stores-list">
+				<div class="store-container">
+					<dir class="store-container-background">
+						
+						<div class="store-info-container">
+							<div class="store-address">
+								<span>8480 Benevlly Blvd</span>
+								<span> Los Angeles, CA 90048</span>
+							</div>
+							<div class="store-phoneno">789-632-1458</div>
+						</div>
+						<div class="store-number-container">
+							<div class="store-number">
+								1
+							</div>
+						</div>
+					</dir>	
+				</div>
+			</div>
+		</dir>
+		<div id="map"></div>
+		<script src="js/index.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap"></script>
+  	</body>
+</html>
